@@ -1,5 +1,43 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        // frequency map
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        // bucket containsing same freq
+        List<Integer>[] box = new List[nums.length+1];
+        for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+            int num = entry.getKey();
+            int freq = entry.getValue();
+            if(box[freq] == null){
+                box[freq] = new ArrayList<>();
+            }
+            box[freq].add(num);
+        }
+
+        int[] result = new int[k];
+        int index = 0;
+        for(int i = nums.length ; i >= 0 && index < k ; i-- ){
+            if( box[i] != null){
+                for(int num : box[i]){
+                    result[index] = num;
+                    index++;
+                    if(index == k ) return result;
+                }
+
+            }
+        }
+
+        return result;
+    }
+}
+
+
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> freqMap = new HashMap<>();
         for (int num : nums) {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);

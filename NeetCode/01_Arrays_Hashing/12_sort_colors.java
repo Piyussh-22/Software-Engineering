@@ -1,3 +1,31 @@
+// best
+class Solution {
+    public void sortColors(int[] nums) {
+        // dutch flag algo
+        int start = 0;
+        int mid = 0;
+        int end = nums.length - 1;
+        while( mid <= end ){
+            if( nums[mid] == 2 ){
+                swap(nums,mid,end);
+                end--;
+            }else if ( nums[mid] == 1 ){
+                mid++;
+            }else{
+                swap( nums,mid,start);
+                start++;
+                mid++;
+            }
+        }
+    }
+    public void swap(int[] nums , int mid , int end){
+        int temp = nums[end];
+        nums[end] = nums[mid];
+        nums[mid] = temp;
+    }
+}
+
+
 class Solution {
     public void sortColors(int[] nums) {
         int step = 1 ;
