@@ -1,3 +1,5 @@
+package patterns;
+
 /*
 1. no of lines = no of rows = no of times the outer loop will run
 2. identify for every row number , how many cols are there and type of element in cols
