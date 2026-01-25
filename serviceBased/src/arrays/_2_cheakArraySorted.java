@@ -1,6 +1,6 @@
 package arrays;
 
-public class cheakArraySorted {
+public class _2_cheakArraySorted {
     public static void main(String[] args){
         int[] ans = new int[]{2,3,4,6,5,5,6};
         System.out.print(isSorted(ans));

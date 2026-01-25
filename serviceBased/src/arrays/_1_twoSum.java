@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class twoSum {
+public class _1_twoSum {
     public static void main(String[] args) {
         int[] ans = map(new int[]{3,2,4},6);
         System.out.println(Arrays.toString(ans));

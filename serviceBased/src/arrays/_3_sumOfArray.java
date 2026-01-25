@@ -1,6 +1,6 @@
 package arrays;
 
-public class sumOfArray {
+public class _3_sumOfArray {
     public static void main(String[] args) {
         System.out.print(sum(new int[] {}));
     }
