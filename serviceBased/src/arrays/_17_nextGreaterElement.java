@@ -1,7 +1,8 @@
 package arrays;
 
 import java.util.Arrays;
-
+/*“Once I find the element in nums2, I scan only to the right
+ and return the first greater value; otherwise, I keep -1.”*/
 public class _17_nextGreaterElement {
     public static void main(String[] args) {
 
