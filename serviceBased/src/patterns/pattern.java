@@ -9,9 +9,8 @@ package patterns;
 PATTERN ATTACK STRATEGY (3–4 LINES)
 Outer loop = number of lines
 Think row-wise → for each row decide spaces first,
-then stars/numbers
+then (stars / numbers)
 First half grows, second half shrinks (for diamond/kite)
-
 Change print statement, not loops
  */
 public class pattern {
