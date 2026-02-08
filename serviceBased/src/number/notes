@@ -1,0 +1,27 @@
+1.
+When converting ANY number to another base:
+
+Take remainder → that becomes the digit.
+Divide → continue.
+Reverse at the end.
+
+This pattern works for: ( binary, hex, octal, ANY base )
+
+2.
+To get -X:
+
+Flip bits
++1
+
+3.
+Study in this order:
+Binary number system (base-2, decimal ↔ binary conversion)
+Signed vs unsigned integers
+Two’s complement (negative number representation)
+Bitwise operators: &, |, ^, ~
+Shift operators: <<, >>, >>>
+Bit masking (set, clear, toggle, check bits)
+Power-of-two pattern (n & (n-1))
+Base conversions using bits (binary ↔ hex, etc.)
+Counting set bits (Hamming weight)
+Common bit tricks used in coding problems
