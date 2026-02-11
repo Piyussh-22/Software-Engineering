@@ -1,0 +1,31 @@
+class: a class is an template of any object
+object: an object is an instanace of a class
+instnace : physical stuff of the class which exist
+           for real
+           example : class humankind
+                     object real human
+                     real humans are instnace of the class
+                     humankind
+           class are blueprint/rules/logical construct not actual things
+           object are physical reality occupies space in memory/ram
+
+objecs are stored in the heap memory
+ref variavle are stored in the stack memory
+
+instnce variable are the variable that are declared inside
+ the class
+
+class Student{
+        int rno;
+        String name;
+        float marks;
+    }
+    Student student1;  -> a ref var in call stack point to null
+    heap memroy have the acutal object
+    student1 = new Student();
+    new operator : dyanamiclly (at run time) allocates memrory
+    and reutrn a reference variable to it
+
+    Student std1 = new Student();
+    to the left of = happends during comple time and
+    to te right of = happends during run time (dynamic)
