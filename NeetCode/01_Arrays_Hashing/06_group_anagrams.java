@@ -3,7 +3,7 @@ class Solution {
         Map<String, List<String>> map = new HashMap<>();
         for(String word: strs){
             char[] chars = word.toCharArray();
-            Arrays.sort(chars);
+            ArraysHashing.sort(chars);
             String sortedWord = new String(chars);
             if(map.containsKey(sortedWord)){
                 map.get(sortedWord).add(word);

@@ -1,3 +1,5 @@
+package Strings;
+
 class Solution {
     public boolean wordPattern(String pattern, String s) {
         String[] arr = s.split(" ");

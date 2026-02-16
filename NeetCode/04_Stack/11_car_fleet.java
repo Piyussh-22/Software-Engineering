@@ -6,7 +6,7 @@ class Solution {
             ps[i][0] = position[i];
             ps[i][1] = speed[i];
         }
-        Arrays.sort(ps, (a, b) -> Integer.compare(b[0], a[0]));
+        ArraysHashing.sort(ps, (a, b) -> Integer.compare(b[0], a[0]));
         int noOfFleet = 0 ;
         double maxTime = 0;
         for (int i = 0 ; i < n ; i++ ){

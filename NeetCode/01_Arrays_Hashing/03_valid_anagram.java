@@ -5,8 +5,8 @@ class Solution {
         if(sArray.length != tArray.length){
             return false;
         }
-        Arrays.sort(sArray);
-        Arrays.sort(tArray);
+        ArraysHashing.sort(sArray);
+        ArraysHashing.sort(tArray);
         for ( int i = 0 ; i < sArray.length ; i++){
             if(sArray[i] != tArray[i]){
                 return false;

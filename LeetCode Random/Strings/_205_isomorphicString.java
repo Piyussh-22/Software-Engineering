@@ -1,3 +1,5 @@
+package Strings;
+
 // o(n)
 class Solution {
     public boolean isIsomorphic(String s, String t) {

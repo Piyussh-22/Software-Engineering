@@ -1,3 +1,5 @@
+package ArraysHashing;
+
 class Solution {
     public int maximumProduct(int[] nums) {
         int big = Integer.MIN_VALUE;

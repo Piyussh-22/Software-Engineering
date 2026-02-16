@@ -1,3 +1,5 @@
+package Strings;
+
 //method 1;
 class Solution1 {
     public boolean isPalindrome(int x) {

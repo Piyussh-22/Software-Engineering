@@ -1,3 +1,5 @@
+package Strings;
+
 class Solution {
     public int longestPalindrome(String s) {
         HashMap<Character,Integer> map = new HashMap<>();

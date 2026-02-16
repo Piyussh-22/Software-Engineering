@@ -1,3 +1,5 @@
+package Strings;
+
 class Solution {
     public String licenseKeyFormatting(String s, int k) {
         StringBuilder str = new StringBuilder();

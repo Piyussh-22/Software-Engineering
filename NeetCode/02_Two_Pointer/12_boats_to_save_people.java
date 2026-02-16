@@ -1,6 +1,6 @@
 class Solution {
     public int numRescueBoats(int[] people, int limit) {
-        Arrays.sort(people);
+        ArraysHashing.sort(people);
         int noOfBoats = 0;
         int left = 0;
         int right = people.length-1;

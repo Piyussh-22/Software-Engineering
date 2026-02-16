@@ -1,3 +1,5 @@
+package ArraysHashing;
+
 class Solution {
     public boolean check(int[] nums) {
         int n = nums.length;

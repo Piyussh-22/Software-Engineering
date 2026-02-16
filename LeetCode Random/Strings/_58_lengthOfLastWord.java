@@ -1,3 +1,5 @@
+package Strings;
+
 class Solution {
     public int lengthOfLastWord(String s) {
         int count = 0;
