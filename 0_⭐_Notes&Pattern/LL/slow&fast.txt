@@ -1,0 +1,84 @@
+Slow & Fast Pointer:-
+    Core Recognition Notes:-
+        • Need middle → slow & fast
+        • Need cycle → slow & fast
+        • Need cycle start → reset pointer
+        • Need kth from end → fixed gap
+        • Need reorder/split → find middle first
+        • Linked list + O(1) space hint → slow-fast
+
+    🟢 EASY
+        876 — Middle of Linked List ✅
+            slow = 1 step
+            fast = 2 steps
+            when fast reaches end → slow is middle
+
+        141 — Linked List Cycle ✅
+            slow moves 1
+            fast moves 2
+            if slow == fast → cycle exists
+
+        160 — Intersection of Two Linked Lists
+            two pointers start from both heads
+            when pointer reaches null → jump to other list head
+            both pointers travel equal distance
+            meeting point = intersection node
+
+        2095 — Delete the Middle Node of a Linked List ✅
+            find middle using slow-fast
+            keep prev pointer of slow
+            delete slow node
+
+        328 — Odd Even Linked List ✅
+            maintain two moving pointers
+            odd pointer jumps 2 steps
+            even pointer jumps 2 steps
+            reconnect odd list with even list
+
+--------------------------------------------------
+
+    🟡 MEDIUM
+        19 — Remove Nth Node From End of List ✅
+            create gap of n+1 between fast and slow
+            move both together
+            when fast == null
+            slow is before target node
+            use dummy node
+
+        142 — Linked List Cycle II ✅
+            Phase 1 → detect collision
+            Phase 2 → reset one pointer to head
+            Phase 3 → move both 1 step → meet at cycle start
+
+        234 — Palindrome Linked List
+            slow-fast → find middle
+            reverse second half
+            compare first half and reversed half
+
+        61 — Rotate List ✅
+            find length
+            connect tail to head (make cycle)
+            move pointer to new tail position
+            break cycle
+
+        725 — Split Linked List in Parts
+            calculate length
+            distribute nodes evenly
+            slow traversal used to cut parts correctly
+
+        143 — Reorder List
+            slow-fast → find middle
+            reverse second half
+            merge alternately
+            L0 → Ln → L1 → Ln-1 ...
+
+--------------------------------------------------
+
+    🔴 HARD
+        148 — Sort List
+            merge sort on linked list
+            slow-fast used to find middle for splitting
+            recursively sort halves
+            merge two sorted lists
+
+--------------------------------------------------
