@@ -3,7 +3,7 @@
 /*
 ENCAPSULATION
 - bundle data and methods in one unit
-- restrict direct access using private
+- restrict direct access using private (access modifier)
 - access data through controlled methods
 
 WHY
