@@ -1,11 +1,11 @@
 // INHERITANCE — Child class acquires properties and methods of parent class
 // 99% of the time we use public inheritance
 
-class Employee {
+class Employee1 {
     String name;
     double salary;
 
-    Employee(String name, double salary) {
+    Employee1(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -20,7 +20,7 @@ class Employee {
 }
 
 // Developer inherits name, salary, work(), showDetails() from Employee
-class Developer extends Employee {
+class Developer extends Employee1 {
     String language;
 
     Developer(String name, double salary, String language) {
@@ -34,7 +34,7 @@ class Developer extends Employee {
 }
 
 // Manager also inherits everything from Employee and adds its own
-class Manager extends Employee {
+class Manager extends Employee1 {
     int teamSize;
 
     Manager(String name, double salary, int teamSize) {
