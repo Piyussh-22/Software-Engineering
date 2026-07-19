@@ -1,5 +1,4 @@
-package ArraysHashing;
-
+import java.util.*;
 class Solution {
     public List<Integer> toggleLightBulbs(List<Integer> bulbs) {
         boolean[] on = new boolean[101];
